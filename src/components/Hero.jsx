@@ -58,7 +58,7 @@ const Hero = () => {
 				trigger: "video",
 				start: startValue,
 				end: endValue,
-				scrub: 1, // Smooth scrubbing
+				scrub: true, // Smooth scrubbing
 				pin: true, // Set to true for debugging
 			},
 		});
