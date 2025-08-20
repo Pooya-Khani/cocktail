@@ -1,6 +1,6 @@
 "use client";
 
-import { allCocktails } from "../../constants/index";
+import { allCocktails } from "../../constants/index.js";
 import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -57,7 +57,7 @@ const Menu = () => {
 
 	const currentCocktail = getCocktailAt(0);
 	const prevCocktail = getCocktailAt(-1);
-	const nextCocktail = getCocktailAt(+1);
+	const nextCocktail = getCocktailAt(1);
 
 	return (
 		<section id="menu" aria-labelledby="menu-heading">
@@ -140,5 +140,4 @@ const Menu = () => {
 		</section>
 	);
 };
-
 export default Menu;
